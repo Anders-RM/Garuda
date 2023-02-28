@@ -1,6 +1,6 @@
 #! /bin/bash
 sudo garuda-update
-sudo yay -S --noconfirm pamac-all
+sudo yay -Sy --noconfirm pamac-all
 sudo pacman -Sy --noconfirm git
 sudo pacman -Sy --noconfirm yakuake
 sudo pacman -Rsu --noconfirm octopi
