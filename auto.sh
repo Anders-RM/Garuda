@@ -12,6 +12,10 @@ git clone https://aur.archlinux.org/snapd-glib.git
 cd snapd-glib
 makepkg -si
 cd ..
+git clone https://aur.archlinux.org/snapd.git
+cd snapd
+makepkg -si
+cd ..
 
 git clone https://aur.archlinux.org/libpamac-full.git
 cd libpamac-full
