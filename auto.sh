@@ -2,7 +2,7 @@
 garuda-update
 
 git clone https://aur.archlinux.org/pamac-all.git
-cd pacman-all
+cd pamac-all
 makepkg -si
 
 # sudo pacman -Sy --noconfirm git
