@@ -31,6 +31,8 @@ lookandfeeltool -a Sweet
 sudo lookandfeeltool -a Sweet
 sed -i 's/BorderlessMaximizedWindows=true/BorderlessMaximizedWindows=false/' ~/.config/kwinrc
 
+cp /usr/share/applications/org.kde.yakuake.desktop ~/.config/autostart/org.kde.yakuake.desktop
+
 #logout
 qdbus org.kde.ksmserver /KSMServer org.kde.KSMServerInterface.logout 0 3 3
 
