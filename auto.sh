@@ -1,5 +1,5 @@
 #! /bin/bash
-sudo garuda-update
+garuda-update
 sudo yay -Sy --noconfirm pamac-all
 sudo pacman -Sy --noconfirm git
 sudo pacman -Sy --noconfirm yakuake
