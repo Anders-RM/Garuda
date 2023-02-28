@@ -1,6 +1,17 @@
 #! /bin/bash
 garuda-update
 sudo pacman -Sy --noconfirm libhandy
+sudo pacman -Sy --noconfirm flatpak
+sudo pacman -Sy --noconfirm appstream-glib
+git clone https://aur.archlinux.org/archlinux-appstream-data-pamac.git
+cd archlinux-appstream-data-pamac
+makepkg -si
+cd ..
+
+git clone https://aur.archlinux.org/snapd-glib.git
+cd snapd-glib
+makepkg -si
+cd ..
 
 git clone https://aur.archlinux.org/libpamac-full.git
 cd libpamac-full
