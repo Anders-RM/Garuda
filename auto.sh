@@ -1,7 +1,10 @@
 #! /bin/bash
 garuda-update
-yay 
-yay -Sy pamac-all
+
+git clone https://aur.archlinux.org/pamac-all.git
+cd pacman-all
+makepkg -si
+
 sudo pacman -Sy --noconfirm git
 sudo pacman -Sy --noconfirm yakuake
 sudo pacman -Sy --noconfirm firefox
