@@ -1,12 +1,21 @@
-#! /bin/zsh
+#! /bin/bash
 sudo garuda-update
 sudo yay -S --noconfirm pamac-all
 sudo pacman -Sy --noconfirm git
 sudo pacman -Sy --noconfirm yakuake
 sudo pacman -Rsu --noconfirm octopi
-sudo pamac install --noconfirm visual-studio-code-bin
+sudo pamac install --no-confirm visual-studio-code-bin
 sudo pacman -Rsu --noconfirm latte-dock
-sudo pacman -Rsu --noconfirm firefox
+sudo pacman -Sy --noconfirm firefox
+sudo pacman -Sy --noconfirm opera
+sudo pamac install --no-confirm opera-ffmpeg-codecs 
+flatpak install -y flathub tv.plex.PlexDesktop
+sudo pacman -Sy --noconfirm steam
+sudo pacman -Sy --noconfirm libreoffice-fresh
+flatpak install -y flathub org.qbittorrent.qBittorrent
+flatpak install -y flathub com.yubico.yubioath
+sudo pamac install --no-confirm onedriver
+sudo pacman -Sy --noconfirm piper
 
 #git config
 ssh-keygen -q -t rsa -N '@Ndersraeder' -f ~/.ssh/id_rsa -C "andersrm1808@gmial.com" <<<y >/dev/null 2>&1
@@ -18,7 +27,7 @@ mv up-shutdown /usr/bin/
 mv upgrade-all /usr/bin/
 mv open_as_root.desktop ~/.local/share/kservices5/ServiceMenus
 
-sudo lookandfeeltool -a Sweet
+sudo lookandfeeltool -a org.kde.breezedark.desktop
 sed -i 's/BorderlessMaximizedWindows=true/BorderlessMaximizedWindows=false/' ~/.config/kwinrc
 
 #logout
