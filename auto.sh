@@ -38,8 +38,8 @@ cp /usr/share/applications/org.kde.yakuake.desktop ~/.config/autostart/org.kde.y
 
 sudo useradd -m ssh
 sudo passwd ssh
-sudo sed -i '/^\[Users\]$/a HideUsers=ssh' /etc/sddm.conf
+sudo bash -c 'echo "[Users]
+HideUsers=ssh" >> /etc/sddm.conf'
 
 #logout
 qdbus org.kde.ksmserver /KSMServer org.kde.KSMServerInterface.logout 0 3 3
-
