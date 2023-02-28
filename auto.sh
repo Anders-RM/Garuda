@@ -22,7 +22,7 @@ ssh-keygen -q -t rsa -N '@Ndersraeder' -f ~/.ssh/id_rsa -C "andersrm1808@gmial.c
 git config --global user.email "andersrm1808@gmial.com"
 git config --global user.name "anddersrm1808"
 
-
+mkdir -p ~/.local/share/kservices5/ServiceMenus
 mv up-shutdown /usr/bin/
 mv upgrade-all /usr/bin/
 mv open_as_root.desktop ~/.local/share/kservices5/ServiceMenus
