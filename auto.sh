@@ -3,7 +3,7 @@ garuda-update
 sudo pacman -Sy --noconfirm libhandy
 
 git clone https://aur.archlinux.org/libpamac-full.git
-cd libpamac-ful
+cd libpamac-full
 makepkg -si
 cd ..
 
