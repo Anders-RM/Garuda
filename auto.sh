@@ -1,6 +1,6 @@
 #! /bin/bash
 garuda-update
-sudo yay -Sy --noconfirm pamac-all
+yay -Sy --noconfirm pamac-all
 sudo pacman -Sy --noconfirm git
 sudo pacman -Sy --noconfirm yakuake
 sudo pacman -Sy --noconfirm firefox
