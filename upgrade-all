@@ -1,4 +1,5 @@
 #! /bin/bash
+sudo garuda-update
 pacman -Syu --noconfirm
 pamac update --no-confirm
 pamac upgrade --no-confirm
