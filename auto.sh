@@ -27,8 +27,10 @@ mv up-shutdown /usr/bin/
 mv upgrade-all /usr/bin/
 mv open_as_root.desktop ~/.local/share/kservices5/ServiceMenus
 
-sudo lookandfeeltool -a org.kde.breezedark.desktop
+lookandfeeltool -a Sweet
+sudo lookandfeeltool -a Sweet
 sed -i 's/BorderlessMaximizedWindows=true/BorderlessMaximizedWindows=false/' ~/.config/kwinrc
 
 #logout
 qdbus org.kde.ksmserver /KSMServer org.kde.KSMServerInterface.logout 0 3 3
+
