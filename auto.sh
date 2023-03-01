@@ -38,7 +38,6 @@ sudo pacman -Rsu --noconfirm latte-dock
 flatpak install -y flathub com.yubico.yubioath
 flatpak install -y flathub tv.plex.PlexDesktop
 flatpak install -y flathub org.qbittorrent.qBittorrent
-flatpak install -y flathub ch.protonmail.protonmail-bridge
 sudo pamac install --no-confirm visual-studio-code-bin
 sudo pamac install --no-confirm opera-ffmpeg-codecs 
 sudo pamac remove --no-confirm firedragon-extension-plasma-integration firedragon
