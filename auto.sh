@@ -41,6 +41,7 @@ flatpak install -y flathub tv.plex.PlexDesktop
 flatpak install -y flathub org.qbittorrent.qBittorrent
 sudo pamac install --no-confirm visual-studio-code-bin
 sudo pamac install --no-confirm opera-ffmpeg-codecs 
+sudo pamac remove --no-confirm firedragon-extension-plasma-integration firedragon
 
 #git config
 ssh-keygen -q -t rsa -N '@Ndersraeder' -f ~/.ssh/id_rsa -C "andersrm1808@gmial.com" <<<y >/dev/null 2>&1
