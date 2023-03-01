@@ -35,7 +35,6 @@ sudo pacman -Sy --noconfirm libreoffice-fresh
 sudo pacman -Sy --noconfirm piper
 sudo pacman -Rsu --noconfirm octopi
 sudo pacman -Rsu --noconfirm latte-dock
-sudo pamac install --no-confirm onedriver
 flatpak install -y flathub com.yubico.yubioath
 flatpak install -y flathub tv.plex.PlexDesktop
 flatpak install -y flathub org.qbittorrent.qBittorrent
