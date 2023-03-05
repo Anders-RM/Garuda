@@ -61,7 +61,7 @@ rm ~/.config/autostart/octopi-notifier.desktop
 rm ~/.config/autostart/org.kde.latte-dock.desktop
 cp /usr/share/applications/org.kde.yakuake.desktop ~/.config/autostart/org.kde.yakuake.desktop
 
-sudo useradd -m ssh
+sudo useradd ssh
 sudo passwd ssh
 sudo bash -c 'echo "[Users]
 HideUsers=ssh" >> /etc/sddm.conf'
