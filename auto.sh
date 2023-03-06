@@ -50,6 +50,7 @@ git config --global user.name "Anders-RM"
 mkdir -p ~/.local/share/kservices5/ServiceMenus
 mv up-shutdown /usr/bin/
 mv upgrade-all /usr/bin/
+mv proton-ge /usr/bin/
 mv open_as_root.desktop ~/.local/share/kservices5/ServiceMenus
 
 lookandfeeltool -a Sweet
