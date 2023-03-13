@@ -7,24 +7,31 @@ git clone https://aur.archlinux.org/archlinux-appstream-data-pamac.git
 cd archlinux-appstream-data-pamac
 makepkg -si --noconfirm
 cd ..
+rm -dfr archlinux-appstream-data-pamac
 
 git clone https://aur.archlinux.org/snapd-glib.git
 cd snapd-glib
 makepkg -si --noconfirm
 cd ..
+rm -dfr snapd-glib
+
 git clone https://aur.archlinux.org/snapd.git
 cd snapd
 makepkg -si --noconfirm
 cd ..
+rm -dfr snapd
 
 git clone https://aur.archlinux.org/libpamac-full.git
 cd libpamac-full
 makepkg -si --noconfirm
 cd ..
+rm -dfr libpamac-full
 
 git clone https://aur.archlinux.org/pamac-all.git
 cd pamac-all
 makepkg -si --noconfirm
+cd ..
+rm -dfr pamac-all
 
 sudo pacman -Sy --noconfirm git
 sudo pacman -Sy --noconfirm yakuake
@@ -62,9 +69,9 @@ rm ~/.config/autostart/octopi-notifier.desktop
 rm ~/.config/autostart/org.kde.latte-dock.desktop
 cp /usr/share/applications/org.kde.yakuake.desktop ~/.config/autostart/org.kde.yakuake.desktop
 
-sed -n 's/if status --is-interactive && type -q fastfetch/#if status --is-interactive && type -q fastfetch/' ~/.config/fish/congif.fish
-sed -n 's/   fastfetch --load-config neofetch/#   fastfetch --load-config neofetch/' ~/.config/fish/congif.fish
-sed -n 's/end/#end/' ~/.config/fish/congif.fish
+sed -n 's/if status --is-interactive && type -q fastfetch/#if status --is-interactive && type -q fastfetch/' ~/.config/fish/config.fish
+sed -n 's/   fastfetch --load-config neofetch/#   fastfetch --load-config neofetch/' ~/.config/fish/config.fish
+sed -n 's/end/#end/' ~/.config/fish/config.fish
 
 
 #if status --is-interactive && type -q fastfetch
