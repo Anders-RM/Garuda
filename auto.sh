@@ -78,10 +78,6 @@ sed '158d' testfile.txt
 sed '159d' testfile.txt
 sed '160d' testfile.txt
 
-if status --is-interactive && type -q fastfetch
-fastfetch --load-config neofetch
-end
-
 sudo useradd ssh
 sudo passwd ssh
 sudo bash -c 'echo "[Users]
