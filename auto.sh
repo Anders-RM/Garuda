@@ -73,10 +73,14 @@ sudo cp /usr/share/applications/org.kde.yakuake.desktop ~/.config/autostart/org.
 #sed -i 's/   fastfetch --load-config neofetch/#   fastfetch --load-config neofetch\n/' ~/.config/fish/config.fish
 #sed -i 's/end/#end\n/' ~/.config/fish/config.fish
 
+sed '157d' testfile.txt
+sed '158d' testfile.txt
+sed '159d' testfile.txt
+sed '160d' testfile.txt
 
-#if status --is-interactive && type -q fastfetch
-#   fastfetch --load-config neofetch
-#end
+if status --is-interactive && type -q fastfetch
+fastfetch --load-config neofetch
+end
 
 sudo useradd ssh
 sudo passwd ssh
