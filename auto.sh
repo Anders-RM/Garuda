@@ -55,10 +55,10 @@ git config --global user.email "Anders_RMathiesen@pm.me"
 git config --global user.name "Anders-RM"
 
 sudo mkdir -p ~/.local/share/kservices5/ServiceMenus
-sudo mv up-shutdown /usr/bin/
-sudo mv upgrade-all /usr/bin/
-sudo mv proton-ge /usr/bin/
-sudo mv open_as_root.desktop ~/.local/share/kservices5/ServiceMenus
+sudo mv ~/garuda/up-shutdown /usr/bin/
+sudo mv ~/garuda/upgrade-all /usr/bin/
+sudo mv ~/garuda/proton-ge /usr/bin/
+sudo mv ~/garuda/open_as_root.desktop ~/.local/share/kservices5/ServiceMenus
 
 lookandfeeltool -a Sweet
 sudo lookandfeeltool -a Sweet
