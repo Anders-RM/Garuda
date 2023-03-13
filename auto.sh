@@ -54,11 +54,11 @@ ssh-keygen -q -t rsa -N '@Ndersraeder' -f ~/.ssh/id_rsa -C "Anders_RMathiesen@pm
 git config --global user.email "Anders_RMathiesen@pm.me"
 git config --global user.name "Anders-RM"
 
-mkdir -p ~/.local/share/kservices5/ServiceMenus
-mv up-shutdown /usr/bin/
-mv upgrade-all /usr/bin/
-mv proton-ge /usr/bin/
-mv open_as_root.desktop ~/.local/share/kservices5/ServiceMenus
+sudo mkdir -p ~/.local/share/kservices5/ServiceMenus
+sudo mv up-shutdown /usr/bin/
+sudo mv upgrade-all /usr/bin/
+sudo mv proton-ge /usr/bin/
+sudo mv open_as_root.desktop ~/.local/share/kservices5/ServiceMenus
 
 lookandfeeltool -a Sweet
 sudo lookandfeeltool -a Sweet
@@ -67,7 +67,7 @@ sed -i 's/BorderlessMaximizedWindows=true/BorderlessMaximizedWindows=false/' ~/.
 
 rm ~/.config/autostart/octopi-notifier.desktop
 rm ~/.config/autostart/org.kde.latte-dock.desktop
-cp /usr/share/applications/org.kde.yakuake.desktop ~/.config/autostart/org.kde.yakuake.desktop
+sudo cp /usr/share/applications/org.kde.yakuake.desktop ~/.config/autostart/org.kde.yakuake.desktop
 
 sed -n 's/if status --is-interactive && type -q fastfetch/#if status --is-interactive && type -q fastfetch/' ~/.config/fish/config.fish
 sed -n 's/   fastfetch --load-config neofetch/#   fastfetch --load-config neofetch/' ~/.config/fish/config.fish
