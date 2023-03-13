@@ -43,8 +43,8 @@ sudo pamac install --no-confirm opera-ffmpeg-codecs
 sudo pamac remove --no-confirm firedragon-extension-plasma-integration firedragon
 
 #git config
-ssh-keygen -q -t rsa -N '@Ndersraeder' -f ~/.ssh/id_rsa -C "Anders_RMathiesen@pm.me <<<y >/dev/null 2>&1
-git config --global user.email "Anders_RMathiesen@pm.me
+ssh-keygen -q -t rsa -N '@Ndersraeder' -f ~/.ssh/id_rsa -C "Anders_RMathiesen@pm.me" <<<y >/dev/null 2>&1
+git config --global user.email "Anders_RMathiesen@pm.me"
 git config --global user.name "Anders-RM"
 
 mkdir -p ~/.local/share/kservices5/ServiceMenus
@@ -61,6 +61,15 @@ sed -i 's/BorderlessMaximizedWindows=true/BorderlessMaximizedWindows=false/' ~/.
 rm ~/.config/autostart/octopi-notifier.desktop
 rm ~/.config/autostart/org.kde.latte-dock.desktop
 cp /usr/share/applications/org.kde.yakuake.desktop ~/.config/autostart/org.kde.yakuake.desktop
+
+sed -n 's/if status --is-interactive && type -q fastfetch/#if status --is-interactive && type -q fastfetch/' ~/.config/fish/congif.fish
+sed -n 's/   fastfetch --load-config neofetch/#   fastfetch --load-config neofetch/' ~/.config/fish/congif.fish
+sed -n 's/end/#end/' ~/.config/fish/congif.fish
+
+
+#if status --is-interactive && type -q fastfetch
+#   fastfetch --load-config neofetch
+#end
 
 sudo useradd ssh
 sudo passwd ssh
