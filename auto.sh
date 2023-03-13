@@ -69,9 +69,9 @@ rm ~/.config/autostart/octopi-notifier.desktop
 rm ~/.config/autostart/org.kde.latte-dock.desktop
 sudo cp /usr/share/applications/org.kde.yakuake.desktop ~/.config/autostart/org.kde.yakuake.desktop
 
-sed -i 's/if status --is-interactive && type -q fastfetch/#if status --is-interactive && type -q fastfetch\n/' ~/.config/fish/config.fish
-sed -i 's/   fastfetch --load-config neofetch/#   fastfetch --load-config neofetch\n/' ~/.config/fish/config.fish
-sed -i 's/end/#end\n/' ~/.config/fish/config.fish
+#sed -i 's/if status --is-interactive && type -q fastfetch/#if status --is-interactive && type -q fastfetch\n/' ~/.config/fish/config.fish
+#sed -i 's/   fastfetch --load-config neofetch/#   fastfetch --load-config neofetch\n/' ~/.config/fish/config.fish
+#sed -i 's/end/#end\n/' ~/.config/fish/config.fish
 
 
 #if status --is-interactive && type -q fastfetch
